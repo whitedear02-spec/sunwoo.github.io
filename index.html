@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101319">
+  <title>PHONE — Personal Device</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage">
+    <section class="phone" aria-label="가상 휴대폰">
+      <div class="island"></div>
+      <div class="status"><span id="status-time">9:41</span><span class="status-icons">● ▰ ▴</span></div>
+      <div class="screen" id="screen">
+        <section class="view home-view active" id="home-view">
+          <div class="wallpaper-glow"></div>
+          <header class="home-header">
+            <div class="small-date" id="home-date">10월 19일 월요일</div>
+            <div class="big-clock" id="home-clock">9:41</div>
+            <div class="welcome">오늘도 무사히 돌아오세요.</div>
+          </header>
+          <div class="widget">
+            <div class="widget-top"><span>개인 기기</span><span class="online-dot"></span></div>
+            <strong>사용자 프로필</strong>
+            <p>마지막 백업: 오늘 08:13</p>
+          </div>
+          <div class="app-grid">
+            <button class="app" data-app="messages"><span class="app-icon green">▰</span><span>메시지</span><i class="badge" id="message-badge">2</i></button>
+            <button class="app" data-app="photos"><span class="app-icon photos-icon">✿</span><span>사진</span></button>
+            <button class="app" data-app="notes"><span class="app-icon notes-icon">▤</span><span>메모</span></button>
+            <button class="app" data-app="phone"><span class="app-icon green">⌕</span><span>전화</span></button>
+            <button class="app" data-app="calendar"><span class="app-icon calendar-icon"><small>월</small><b>19</b></span><span>캘린더</span></button>
+            <button class="app" data-app="settings"><span class="app-icon gray">⚙</span><span>설정</span></button>
+            <button class="app" data-app="records"><span class="app-icon gray">▧</span><span>기록</span></button>
+            <button class="app hidden-app" data-app="secret" id="secret-icon" hidden><span class="app-icon secret-icon">?</span><span>복구 불가</span></button>
+          </div>
+          <div class="dock">
+            <button class="app" data-app="phone"><span class="app-icon green">⌕</span></button>
+            <button class="app" data-app="messages"><span class="app-icon green">▰</span></button>
+            <button class="app" data-app="photos"><span class="app-icon photos-icon">✿</span></button>
+            <button class="app" data-app="notes"><span class="app-icon notes-icon">▤</span></button>
+          </div>
+          <div class="home-hint">앱을 눌러 열기</div>
+        </section>
+
+        <section class="view app-view" id="app-view">
+          <header class="app-header">
+            <button class="back-btn" id="back-btn">‹ 홈</button>
+            <h2 id="app-title">메시지</h2>
+            <button class="header-action" id="header-action" aria-label="추가">＋</button>
+          </header>
+          <div class="app-content" id="app-content"></div>
+        </section>
+      </div>
+      <button class="home-bar" id="home-bar" aria-label="홈 화면으로"></button>
+    </section>
+    <aside class="side-note">
+      <div class="eyebrow">PERSONAL DEVICE / 01</div>
+      <h1>누군가의<br><em>휴대폰</em></h1>
+      <p>남겨진 대화와 사진, 메모를 확인하세요.<br>어떤 기록은 생각보다 오래 남아 있습니다.</p>
+      <div class="side-status"><span class="pulse"></span> DEVICE AVAILABLE</div>
+      <button class="reset-btn" id="reset-btn">기기 데이터 초기화</button>
+      <small>시연용 가상 데이터 · 실제 통화/문자 전송은 하지 않습니다.</small>
+    </aside>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
